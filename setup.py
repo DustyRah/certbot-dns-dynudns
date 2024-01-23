@@ -9,8 +9,8 @@ with open('README.md') as f:
     long_description = f.read()
 
 install_requires = [
-    'acme>=2.9.0.dev0',
-    'certbot>=2.9.0.dev0',
+    'acme>=2.8.0',
+    'certbot>=2.8.0',
     'dns-lexicon==3.14.1',
     'dnspython',
     'mock',
@@ -31,7 +31,7 @@ setup(
     download_url='https://github.com/DustyRah/certbot-dns-dynudns/archive/refs/tags/' + version +'.tar.gz',
     author="DustyRah",
     license='Apache License 2.0',
-    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
+    python_requires='>=3.8',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Plugins',
@@ -44,7 +44,6 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
-        'Programming Language :: Python :: 3.12',
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Security',
         'Topic :: System :: Installation/Setup',
