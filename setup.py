@@ -3,15 +3,15 @@ from os import path
 from setuptools import setup
 from setuptools import find_packages
 
-version = "0.0.5"
+VERSION = "0.0.5"
 
 with open('README.md') as f:
     long_description = f.read()
 
 install_requires = [
-    'acme>=2.8.0',
-    'certbot>=2.8.0',
-    'dns-lexicon==3.14.1',
+    'acme>=2.0.0',
+    'certbot>=2.0.0',
+    'dns-lexicon>=3.11.7',
     'dnspython',
     'mock',
     'setuptools',
@@ -22,13 +22,13 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='certbot-dns-dynudns',
-    version=version,
+    version=VERSION,
 
     description="Dynu DNS Authenticator plugin for Certbot",
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/DustyRah/certbot-dns-dynudns',
-    download_url='https://github.com/DustyRah/certbot-dns-dynudns/archive/refs/tags/' + version +'.tar.gz',
+    download_url='https://github.com/DustyRah/certbot-dns-dynudns/archive/refs/tags/' + VERSION +'.tar.gz',
     author="DustyRah",
     license='Apache License 2.0',
     python_requires='>=3.8',
@@ -39,7 +39,12 @@ setup(
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
