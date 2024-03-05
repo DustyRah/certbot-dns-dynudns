@@ -31,7 +31,7 @@ setup(
     download_url='https://github.com/DustyRah/certbot-dns-dynudns/archive/refs/tags/' + VERSION +'.tar.gz',
     author="DustyRah",
     license='Apache License 2.0',
-    python_requires='>=3.8',
+    python_requires='>=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Plugins',
